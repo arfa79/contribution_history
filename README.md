@@ -1,58 +1,51 @@
 # Contribution History
 
-A summary of my open-source contributions to **[Vector](https://github.com/vectordotdev/vector)** – a high-performance observability data pipeline maintained by Datadog.
+A living record of my open-source contributions to
+**[Vector](https://github.com/vectordotdev/vector)**, the observability data
+pipeline maintained by Datadog.
 
----
+## Summary
 
-## 📊 Executive Summary
+Current totals:
 
-| Metric | Details |
-| :--- | :--- |
-| **Total Merged PRs** | **4** (100% merge rate, 0 rejections) |
-| **Primary Stack** | **Rust** (modern systems programming) |
-| **Project Scale** | 10k+ GitHub Stars, production use at Datadog |
-| **Focus Areas** | HTTP client flexibility, Rust API modernization, technical debt reduction |
-| **Contribution Period** | Active 2026 |
+- **6 pull requests** submitted
+- **4 merged pull requests**
+- **2 open pull requests**
+- Primary language: **Rust**
+- Focus areas: metrics ingestion, HTTP configuration, and code maintenance
 
----
+## Vector Contributions
 
-## 📋 All Merged Contributions (With Impact)
+This section is generated from GitHub by `scripts/update_vector_prs.py`.
 
-| Type | PR | Impact / Outcome |
-| :--- | :--- | :--- |
-| ✨ New Feature | **[#26075 - prometheus_scrape: support request headers](https://github.com/vectordotdev/vector/pull/26075)** | Enables **authentication and custom data formats** (e.g., OpenMetrics) for millions of scrape jobs. Removes a long-standing user limitation. |
-| 🧹 Maintenance | **[#26183 - aws kinesis firehose: remove obsolete const lint allow](https://github.com/vectordotdev/vector/pull/26183)** | Unblocks **future Rust compiler upgrades** by eliminating outdated lints, ensuring the codebase stays modern. |
-| 🧹 Maintenance | **[#26128 - core: remove obsolete const lint allows](https://github.com/vectordotdev/vector/pull/26128)** | Reduces compiler warnings and **improves compile times** for downstream developers by cleaning up internal Rust APIs. |
-| 🧹 Maintenance | **[#26059 - config: remove obsolete Darling lint allows](https://github.com/vectordotdev/vector/pull/26059)** | Removes technical debt from the macro system, making the codebase **easier for new contributors** to understand. |
+<!-- vector-prs:start -->
+| PR | Type | Status | Created | Completed |
+| :--- | :--- | :--- | :--- | :--- |
+| [#26264 — feat(datadog_agent): support v3 series metrics intake](https://github.com/vectordotdev/vector/pull/26264) | Feature | Open | 2026-08-30 | — |
+| [#26183 — chore(aws kinesis firehose): remove obsolete const lint allow](https://github.com/vectordotdev/vector/pull/26183) | Maintenance | Merged | 2026-08-22 | 2026-08-26 |
+| [#26128 — chore(core): remove obsolete const lint allows](https://github.com/vectordotdev/vector/pull/26128) | Maintenance | Merged | 2026-08-17 | 2026-08-20 |
+| [#26127 — chore(http): remove obsolete const lint allow](https://github.com/vectordotdev/vector/pull/26127) | Maintenance | Merged | 2026-08-17 | 2026-08-17 |
+| [#26075 — enhancement(prometheus scrape): support request headers](https://github.com/vectordotdev/vector/pull/26075) | Feature | Open | 2026-08-09 | — |
+| [#26059 — chore(config): remove obsolete Darling lint allows](https://github.com/vectordotdev/vector/pull/26059) | Maintenance | Merged | 2026-08-07 | 2026-08-11 |
+<!-- vector-prs:end -->
 
----
+## Datadog Work
 
-## 🔥 Technical Deep-Dive
+### [#26264 — Datadog Agent v3 Series Intake](https://github.com/vectordotdev/vector/pull/26264)
 
-### Most Complex Contribution: [#26075 - Prometheus Scrape Headers](https://github.com/vectordotdev/vector/pull/26075)
+Adds support for the Datadog Agent v3 series metrics endpoint, including
+protobuf decoding, conversion into Vector metrics, resource and metadata
+handling, allocation limits for untrusted payloads, and regression coverage.
 
-**The Problem:**  
-Prometheus exporters often require custom HTTP headers for authentication (e.g., `Authorization: Bearer ...`) or to request specific metrics formats (e.g., `Accept: application/openmetrics-text`). Vector's `prometheus_scrape` source lacked this capability, forcing users to use complex workarounds (like reverse proxies).
+### [#26075 — Prometheus Scrape Request Headers](https://github.com/vectordotdev/vector/pull/26075)
 
-**My Solution:**  
-I extended the source's configuration schema to accept a dynamic map of headers, integrated it with Vector's HTTP client, and ensured full backward compatibility (default behavior remains unchanged).
+Adds configurable HTTP request headers to the `prometheus_scrape` source for
+authenticated endpoints and content negotiation while preserving existing
+default behavior.
 
-**Technical Trade-offs I Considered:**
-- *Approach A:* Hardcode common headers (e.g., `Authorization`).  
-  *Rejected:* Too rigid.
-- *Approach B:* Expose a raw `HashMap<String, String>` to users.  
-  *Chosen:* Maximum flexibility with minimal code complexity.
+## Automatic Updates
 
-**Impact:**  
-This feature is now used by Datadog's internal metrics pipelines to scrape hundreds of thousands of protected endpoints without custom middleware.
-
----
-
-## 📌 How to Use This Document
-
-- **For HR / Recruiters:** Read the **Executive Summary** above for the big picture.
-- **For Technical Leads:** Jump to the **Technical Deep-Dive** and click the PR links to see my actual Rust code, test coverage, and the PR review discussions.
-
----
-
-*Maintained as a living document. New PRs added as they are merged.*
+The `Update Vector contribution history` workflow checks the upstream Vector
+repository every hour and can also be run manually. When a new pull
+request appears or an existing pull request changes state, it regenerates the
+table and commits the update to this repository.
