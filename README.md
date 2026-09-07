@@ -8,9 +8,9 @@ pipeline maintained by Datadog.
 
 Current totals:
 
-- **6 pull requests** submitted
+- **7 pull requests** submitted
 - **4 merged pull requests**
-- **2 open pull requests**
+- **3 open pull requests**
 - Primary language: **Rust**
 - Focus areas: metrics ingestion, HTTP configuration, and code maintenance
 
@@ -21,6 +21,7 @@ This section is generated from GitHub by `scripts/update_vector_prs.py`.
 <!-- vector-prs:start -->
 | PR | Type | Status | Created | Completed |
 | :--- | :--- | :--- | :--- | :--- |
+| [#26315 — chore(vector-config): remove borrowed box lint allow](https://github.com/vectordotdev/vector/pull/26315) | Maintenance | Open | 2026-09-07 | — |
 | [#26264 — feat(datadog_agent): support v3 series metrics intake](https://github.com/vectordotdev/vector/pull/26264) | Feature | Open | 2026-08-30 | — |
 | [#26183 — chore(aws kinesis firehose): remove obsolete const lint allow](https://github.com/vectordotdev/vector/pull/26183) | Maintenance | Merged | 2026-08-22 | 2026-08-26 |
 | [#26128 — chore(core): remove obsolete const lint allows](https://github.com/vectordotdev/vector/pull/26128) | Maintenance | Merged | 2026-08-17 | 2026-08-20 |
