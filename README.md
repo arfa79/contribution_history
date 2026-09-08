@@ -8,9 +8,9 @@ pipeline maintained by Datadog.
 
 Current totals:
 
-- **9 pull requests** submitted
+- **10 pull requests** submitted
 - **4 merged pull requests**
-- **5 open pull requests**
+- **6 open pull requests**
 - Primary language: **Rust**
 - Focus areas: metrics ingestion, HTTP configuration, and code maintenance
 
@@ -21,6 +21,7 @@ This section is generated from GitHub by `scripts/update_vector_prs.py`.
 <!-- vector-prs:start -->
 | PR | Type | Status | Created | Completed |
 | :--- | :--- | :--- | :--- | :--- |
+| [#26324 — chore(vector-buffers): remove needless pass-by-value lint allow](https://github.com/vectordotdev/vector/pull/26324) | Maintenance | Open | 2026-09-08 | — |
 | [#26323 — chore(elasticsearch): remove copy receiver lint allows](https://github.com/vectordotdev/vector/pull/26323) | Maintenance | Open | 2026-09-08 | — |
 | [#26321 — chore(vector-core): remove fanout pass-by-value lint allow](https://github.com/vectordotdev/vector/pull/26321) | Maintenance | Open | 2026-09-08 | — |
 | [#26315 — chore(vector-config): remove borrowed box lint allow](https://github.com/vectordotdev/vector/pull/26315) | Maintenance | Open | 2026-09-07 | — |
