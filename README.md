@@ -9,8 +9,8 @@ pipeline maintained by Datadog.
 Current totals:
 
 - **12 pull requests** submitted
-- **5 merged pull requests**
-- **7 open pull requests**
+- **6 merged pull requests**
+- **6 open pull requests**
 - Primary language: **Rust**
 - Focus areas: metrics ingestion, HTTP configuration, and code maintenance
 
@@ -21,7 +21,7 @@ This section is generated from GitHub by `scripts/update_vector_prs.py`.
 <!-- vector-prs:start -->
 | PR | Type | Status | Created | Completed |
 | :--- | :--- | :--- | :--- | :--- |
-| [#26331 — chore(vector-stream): remove semicolon lint allow](https://github.com/vectordotdev/vector/pull/26331) | Maintenance | Open | 2026-09-09 | — |
+| [#26331 — chore(vector-stream): remove semicolon lint allow](https://github.com/vectordotdev/vector/pull/26331) | Maintenance | Merged | 2026-09-09 | 2026-09-09 |
 | [#26330 — chore(http source): remove unnecessary owned lint allow](https://github.com/vectordotdev/vector/pull/26330) | Maintenance | Open | 2026-09-09 | — |
 | [#26324 — chore(vector-buffers): remove needless pass-by-value lint allow](https://github.com/vectordotdev/vector/pull/26324) | Maintenance | Open | 2026-09-08 | — |
 | [#26323 — chore(elasticsearch): remove copy receiver lint allows](https://github.com/vectordotdev/vector/pull/26323) | Maintenance | Merged | 2026-09-08 | 2026-09-08 |
