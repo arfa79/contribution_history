@@ -8,9 +8,9 @@ pipeline maintained by Datadog.
 
 Current totals:
 
-- **12 pull requests** submitted
-- **6 merged pull requests**
-- **6 open pull requests**
+- **13 pull requests** submitted
+- **9 merged pull requests**
+- **4 open pull requests**
 - Primary language: **Rust**
 - Focus areas: metrics ingestion, HTTP configuration, and code maintenance
 
@@ -21,11 +21,12 @@ This section is generated from GitHub by `scripts/update_vector_prs.py`.
 <!-- vector-prs:start -->
 | PR | Type | Status | Created | Completed |
 | :--- | :--- | :--- | :--- | :--- |
+| [#26339 — chore(vector-common): remove match arm lint allows](https://github.com/vectordotdev/vector/pull/26339) | Maintenance | Merged | 2026-09-09 | 2026-09-09 |
 | [#26331 — chore(vector-stream): remove semicolon lint allow](https://github.com/vectordotdev/vector/pull/26331) | Maintenance | Merged | 2026-09-09 | 2026-09-09 |
-| [#26330 — chore(http source): remove unnecessary owned lint allow](https://github.com/vectordotdev/vector/pull/26330) | Maintenance | Open | 2026-09-09 | — |
+| [#26330 — chore(http source): remove unnecessary owned lint allow](https://github.com/vectordotdev/vector/pull/26330) | Maintenance | Merged | 2026-09-09 | 2026-09-09 |
 | [#26324 — chore(vector-buffers): remove needless pass-by-value lint allow](https://github.com/vectordotdev/vector/pull/26324) | Maintenance | Open | 2026-09-08 | — |
 | [#26323 — chore(elasticsearch): remove copy receiver lint allows](https://github.com/vectordotdev/vector/pull/26323) | Maintenance | Merged | 2026-09-08 | 2026-09-08 |
-| [#26321 — chore(vector-core): remove fanout pass-by-value lint allow](https://github.com/vectordotdev/vector/pull/26321) | Maintenance | Open | 2026-09-08 | — |
+| [#26321 — chore(vector-core): remove fanout pass-by-value lint allow](https://github.com/vectordotdev/vector/pull/26321) | Maintenance | Merged | 2026-09-08 | 2026-09-09 |
 | [#26315 — chore(vector-config): remove borrowed box lint allow](https://github.com/vectordotdev/vector/pull/26315) | Maintenance | Open | 2026-09-07 | — |
 | [#26264 — feat(datadog_agent): support v3 series metrics intake](https://github.com/vectordotdev/vector/pull/26264) | Feature | Open | 2026-08-30 | — |
 | [#26183 — chore(aws kinesis firehose): remove obsolete const lint allow](https://github.com/vectordotdev/vector/pull/26183) | Maintenance | Merged | 2026-08-22 | 2026-08-26 |
