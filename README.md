@@ -9,8 +9,8 @@ pipeline maintained by Datadog.
 Current totals:
 
 - **15 pull requests** submitted
-- **12 merged pull requests**
-- **3 open pull requests**
+- **13 merged pull requests**
+- **2 open pull requests**
 - Primary language: **Rust**
 - Focus areas: metrics ingestion, HTTP configuration, and code maintenance
 
@@ -21,7 +21,7 @@ This section is generated from GitHub by `scripts/update_vector_prs.py`.
 <!-- vector-prs:start -->
 | PR | Type | Status | Created | Completed |
 | :--- | :--- | :--- | :--- | :--- |
-| [#26455 — chore(vector-common): eliminate zlib limit cast allow](https://github.com/vectordotdev/vector/pull/26455) | Maintenance | Open | 2026-09-22 | — |
+| [#26455 — chore(vector-common): eliminate zlib limit cast allow](https://github.com/vectordotdev/vector/pull/26455) | Maintenance | Merged | 2026-09-22 | 2026-09-22 |
 | [#26440 — chore(vdev): remove map unwrap lint allow](https://github.com/vectordotdev/vector/pull/26440) | Maintenance | Merged | 2026-09-21 | 2026-09-21 |
 | [#26339 — chore(vector-common): remove match arm lint allows](https://github.com/vectordotdev/vector/pull/26339) | Maintenance | Merged | 2026-09-09 | 2026-09-09 |
 | [#26331 — chore(vector-stream): remove semicolon lint allow](https://github.com/vectordotdev/vector/pull/26331) | Maintenance | Merged | 2026-09-09 | 2026-09-09 |
