@@ -9,8 +9,8 @@ pipeline maintained by Datadog.
 Current totals:
 
 - **15 pull requests** submitted
-- **13 merged pull requests**
-- **2 open pull requests**
+- **14 merged pull requests**
+- **1 open pull requests**
 - Primary language: **Rust**
 - Focus areas: metrics ingestion, HTTP configuration, and code maintenance
 
@@ -34,7 +34,7 @@ This section is generated from GitHub by `scripts/update_vector_prs.py`.
 | [#26183 — chore(aws kinesis firehose): remove obsolete const lint allow](https://github.com/vectordotdev/vector/pull/26183) | Maintenance | Merged | 2026-08-22 | 2026-08-26 |
 | [#26128 — chore(core): remove obsolete const lint allows](https://github.com/vectordotdev/vector/pull/26128) | Maintenance | Merged | 2026-08-17 | 2026-08-20 |
 | [#26127 — chore(http): remove obsolete const lint allow](https://github.com/vectordotdev/vector/pull/26127) | Maintenance | Merged | 2026-08-17 | 2026-08-17 |
-| [#26075 — enhancement(prometheus scrape): support request headers](https://github.com/vectordotdev/vector/pull/26075) | Feature | Open | 2026-08-09 | — |
+| [#26075 — enhancement(prometheus scrape): support request headers](https://github.com/vectordotdev/vector/pull/26075) | Feature | Merged | 2026-08-09 | 2026-09-25 |
 | [#26059 — chore(config): remove obsolete Darling lint allows](https://github.com/vectordotdev/vector/pull/26059) | Maintenance | Merged | 2026-08-07 | 2026-08-11 |
 <!-- vector-prs:end -->
 
