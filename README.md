@@ -10,7 +10,7 @@ Current totals:
 
 - **15 pull requests** submitted
 - **14 merged pull requests**
-- **1 open pull requests**
+- **1 open pull request**
 - Primary language: **Rust**
 - Focus areas: metrics ingestion, HTTP configuration, and code maintenance
 

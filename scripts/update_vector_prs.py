@@ -98,16 +98,20 @@ def render_table(pull_requests: list[dict]) -> str:
 def update_summary(readme: str, pull_requests: list[dict]) -> str:
     merged = sum(pr.get("pull_request", {}).get("merged_at") is not None for pr in pull_requests)
     opened = sum(pr["state"] == "open" for pr in pull_requests)
+
+    def pull_request_label(count: int) -> str:
+        return "pull request" if count == 1 else "pull requests"
+
     summary = (
         "Current totals:\n\n"
-        f"- **{len(pull_requests)} pull requests** submitted\n"
-        f"- **{merged} merged pull requests**\n"
-        f"- **{opened} open pull requests**"
+        f"- **{len(pull_requests)} {pull_request_label(len(pull_requests))}** submitted\n"
+        f"- **{merged} merged {pull_request_label(merged)}**\n"
+        f"- **{opened} open {pull_request_label(opened)}**"
     )
     return re.sub(
-        r"(?:As of .*?|Current totals):\n\n- \*\*\d+ pull requests\*\* submitted\n"
-        r"- \*\*\d+ merged pull requests\*\*\n"
-        r"- \*\*\d+ open pull requests\*\*",
+        r"(?:As of .*?|Current totals):\n\n- \*\*\d+ pull requests?\*\* submitted\n"
+        r"- \*\*\d+ merged pull requests?\*\*\n"
+        r"- \*\*\d+ open pull requests?\*\*",
         summary,
         readme,
         count=1,
