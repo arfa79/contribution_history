@@ -1,12 +1,12 @@
 # Contribution History
 
 A living record of my open-source contributions to
-**[Vector](https://github.com/vectordotdev/vector)**, the observability data
-pipeline maintained by Datadog.
+**[Vector](https://github.com/vectordotdev/vector)** and the
+**[Kubernetes](https://github.com/kubernetes)** ecosystem.
 
 ## Summary
 
-Current totals:
+Current Vector totals:
 
 - **15 pull requests** submitted
 - **14 merged pull requests**
@@ -37,6 +37,18 @@ This section is generated from GitHub by `scripts/update_vector_prs.py`.
 | [#26075 — enhancement(prometheus scrape): support request headers](https://github.com/vectordotdev/vector/pull/26075) | Feature | Merged | 2026-08-09 | 2026-09-25 |
 | [#26059 — chore(config): remove obsolete Darling lint allows](https://github.com/vectordotdev/vector/pull/26059) | Maintenance | Merged | 2026-08-07 | 2026-08-11 |
 <!-- vector-prs:end -->
+
+## Kubernetes Contributions
+
+| PR | Project | Type | Status | Created | Completed |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| [#37936 — Add AI Conformance verify presubmit](https://github.com/kubernetes/test-infra/pull/37936) | [test-infra](https://github.com/kubernetes/test-infra) | CI/CD | Open | 2026-09-29 | — |
+
+### [#37936 — AI Conformance Verify Presubmit](https://github.com/kubernetes/test-infra/pull/37936)
+
+Adds a required Prow presubmit that runs the AI Conformance repository's
+lint target on every pull request and reports the result through the existing
+TestGrid dashboard.
 
 ## Datadog Work
 

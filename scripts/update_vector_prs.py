@@ -103,13 +103,13 @@ def update_summary(readme: str, pull_requests: list[dict]) -> str:
         return "pull request" if count == 1 else "pull requests"
 
     summary = (
-        "Current totals:\n\n"
+        "Current Vector totals:\n\n"
         f"- **{len(pull_requests)} {pull_request_label(len(pull_requests))}** submitted\n"
         f"- **{merged} merged {pull_request_label(merged)}**\n"
         f"- **{opened} open {pull_request_label(opened)}**"
     )
     return re.sub(
-        r"(?:As of .*?|Current totals):\n\n- \*\*\d+ pull requests?\*\* submitted\n"
+        r"(?:As of .*?|Current(?: Vector)? totals):\n\n- \*\*\d+ pull requests?\*\* submitted\n"
         r"- \*\*\d+ merged pull requests?\*\*\n"
         r"- \*\*\d+ open pull requests?\*\*",
         summary,
