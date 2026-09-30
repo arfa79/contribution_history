@@ -42,7 +42,7 @@ This section is generated from GitHub by `scripts/update_vector_prs.py`.
 
 | PR | Project | Type | Status | Created | Completed |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| [#37936 — Add AI Conformance verify presubmit](https://github.com/kubernetes/test-infra/pull/37936) | [test-infra](https://github.com/kubernetes/test-infra) | CI/CD | Open | 2026-09-29 | — |
+| [#37936 — Add AI Conformance verify presubmit](https://github.com/kubernetes/test-infra/pull/37936) | [test-infra](https://github.com/kubernetes/test-infra) | CI/CD | Merged | 2026-09-29 | 2026-09-29 |
 
 ### [#37936 — AI Conformance Verify Presubmit](https://github.com/kubernetes/test-infra/pull/37936)
 
