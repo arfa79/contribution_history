@@ -2,7 +2,8 @@
 
 A living record of my open-source contributions to
 **[Vector](https://github.com/vectordotdev/vector)** and the
-**[Kubernetes](https://github.com/kubernetes)** ecosystem.
+**[Kubernetes](https://github.com/kubernetes)** ecosystem, plus work on the
+**[Go programming language](https://github.com/golang/go)**.
 
 ## Summary
 
@@ -49,6 +50,28 @@ This section is generated from GitHub by `scripts/update_vector_prs.py`.
 Adds a required Prow presubmit that runs the AI Conformance repository's
 lint target on every pull request and reports the result through the existing
 TestGrid dashboard.
+
+## Go Contributions
+
+| Contribution | Status | Started | Latest update |
+| :--- | :--- | :--- | :--- |
+| [#81882 — cmd/cgo: avoid type aliases for old Go versions](https://github.com/golang/go/pull/81882) ([Gerrit CL 841905](https://go-review.googlesource.com/c/go/+/841905)) | Open, under review | 2026-09-30 | CLA and GitHub checks passed; imported into Gerrit and reviewer feedback received |
+| [#81568 — simd/archsimd: clean up "emulated" doc comments](https://github.com/golang/go/issues/81568) | Design proposal awaiting maintainer response | 2026-09-30 | Proposed generator-derived dependency comments and requested direction on direct versus transitive dependencies |
+
+### [#81882 — cgo compatibility with older Go versions](https://github.com/golang/go/pull/81882)
+
+Updates generated cgo code to avoid language-level type aliases when targeting
+Go versions that predate alias support. The change has passed the Google CLA
+and GitHub checks, was imported as Gerrit CL 841905, and has received its first
+review feedback.
+
+### [#81568 — archsimd emulation documentation](https://github.com/golang/go/issues/81568)
+
+Proposed deriving `Emulated: ...` documentation from generated Go
+implementations so that dependency lists stay synchronized with the code. The
+proposal asks the maintainer to choose between direct and transitive operation
+dependencies and to clarify how reversed single-operation implementations
+should be documented. No maintainer response has been posted yet.
 
 ## Datadog Work
 
